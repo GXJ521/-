@@ -1,0 +1,52 @@
+//
+//  RDPublish.pch
+//  教师管理系统
+//
+//  Created by 高小杰 on 2017/2/27.
+//  Copyright © 2017年 高小杰. All rights reserved.
+//
+#ifdef __OBJC__
+#define RDPublish_pch
+#import "NSString+date.h"
+#import "RDBaseViewController.h"
+#import "RDNavigationController.h"
+#import "MHNetwrok.h"
+#import "AFNetworking.h"
+#import "YYCache.h"
+#import "MHNetworkManager.h"
+#import "RDLoginViewController.h"
+#import "RDApiClient.h"
+#import "YYModel.h"
+#import <objc/runtime.h>
+#import "CustomLabel.h"
+#import "CustomButton.h"
+#import "CustomTextFiled.h"
+#import "CustomAlertView.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+ALinExtension.h"
+#import "MJRefresh.h"
+#import "UIButton+WebCache.h"
+// 定义这个常量,就可以在使用Masonry不必总带着前缀 `mas_`:
+#define MAS_SHORTHAND
+// 定义这个常量,以支持在 Masonry 语法中自动将基本类型转换为 object 类型:
+#define MAS_SHORTHAND_GLOBALS
+#define COLOR(x,y,z) [UIColor colorWithRed:x/255.0f green:y/255.0f blue:z/255.0f alpha:1.0f]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define THEMECOLOR COLOR(51, 51, 51) //列表主标题色
+#define ThemeBluecolor COLOR(55, 211, 203)
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define backGroundColor [UIColor colorWithRed:242/255.0f green:248/255.0f blue:255/255.0f alpha:1.0f] // 背景色
+//#define versionNumber @"2.2.0"
+#define KEY_WINDOW  [[UIApplication sharedApplication]keyWindow]
+#define MainScreenHeight [UIScreen mainScreen].bounds.size.height
+#define MainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define NaviBarColor [UIColor colorWithRed:0.16 green:0.73 blue:0.65 alpha:1.0]
+
+//192.168.6.118:8080/
+//#define baseUrl @"http://192.168.6.118:8080/"
+#define baseUrl @"http://192.168.6.180:8088/ElangsInterface/"
+#endif /* RDPublish_pch */
